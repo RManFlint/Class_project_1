@@ -25,6 +25,8 @@ $(document).ready (function() {
         firebase.auth().signInWithPopup(provider).then(function(result){
           var token = result.credential.accessToken;
           var user = result.user;
+        console.log(result);
+        console.log(token);
         })
       // firebase.auth().getRedirectResult().then(function(result) {
       //   if (result.credential) {
