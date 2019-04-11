@@ -29,6 +29,9 @@ $(document).ready (function() {
         if (result.user){
           window.location.href = "http://www.w3schools.com";
         }
+        else{
+          $("#passwordError").val("You couldn't be Google verified");
+        }
         console.log(result);
         console.log(token);
       })
